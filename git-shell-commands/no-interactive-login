@@ -1,6 +1,6 @@
 #!/bin/sh
-cat /etc/*-release | egrep "PRETTY_NAME|VERSION_ID" | cut -d = -f 2 | tr -d '"' | tac | tr '\n' ' '
-printf '%s\n' "Welcome to git-server-docker!"
+cat /etc/*-release | egrep "PRETTY_NAME" | cut -d = -f 2 | tr -d '"' | tac | tr '\n' ' '
+printf '\n%s\n' "Welcome to git-server-docker!"
 printf '%s\n' "You've successfully authenticated, but I do not"
 printf '%s\n' "provide interactive shell access. goodbye"
 exit 128
