@@ -1,6 +1,9 @@
 #!/bin/sh
+printf '\n%s' "Welcome to "
 cat /etc/*-release | egrep "PRETTY_NAME" | cut -d = -f 2 | tr -d '"' | tac | tr '\n' ' '
-printf '\n%s\n' "Welcome to git-server-docker!"
+printf '%s' "!"
+
+printf '\n%s\n' "This is running git-server-docker! (a barebone git server)"
 printf '%s\n' "You've successfully authenticated, but I do not"
-printf '%s\n' "provide interactive shell access. goodbye"
+printf '%s\n' "provide interactive shell access. Goodbye!"
 exit 128
