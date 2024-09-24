@@ -48,6 +48,8 @@
 
 # RSA is deprecated
 #RSAAuthentication yes
+
+# Only allow ed25519 as method of authentication, block others
 PubkeyAcceptedKeyTypes ssh-ed25519-cert-v01@openssh.com,ssh-ed25519
 PubkeyAuthentication yes
 
