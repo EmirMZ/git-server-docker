@@ -1,7 +1,6 @@
-FROM alpine:3.4
+FROM alpine:3.20
 
-MAINTAINER Carlos Bernárdez "carlos@z4studios.com"
-
+LABEL org.opencontainers.image.authors="Carlos Bernárdez (carlos@z4studios.com)"
 # "--no-cache" is new in Alpine 3.3 and it avoid using
 # "--update + rm -rf /var/cache/apk/*" (to remove cache)
 RUN apk add --no-cache \
