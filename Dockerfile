@@ -10,7 +10,7 @@ RUN apk add --no-cache \
   git
 
 # Key generation on the server
-RUN ssh-keygen -t ed25519 
+RUN ssh-keygen -A
 
 # SSH autorun
 # RUN rc-update add sshd
