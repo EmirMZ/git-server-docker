@@ -31,6 +31,9 @@ RUN mkdir /git-server/keys \
 # More info: https://git-scm.com/docs/git-shell
 COPY git-shell-commands /home/git/git-shell-commands
 
+# simplify the MOTD incase login through ssh
+COPY motd /etc/motd
+
 # sshd_config file is edited for enable access key and disable access password
 COPY sshd_config /etc/ssh/sshd_config
 COPY start.sh start.sh
