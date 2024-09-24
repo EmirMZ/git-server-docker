@@ -46,7 +46,9 @@
 #MaxAuthTries 6
 #MaxSessions 10
 
-RSAAuthentication yes
+# RSA is deprecated
+#RSAAuthentication yes
+PubkeyAcceptedKeyTypes ssh-ed25519-cert-v01@openssh.com,ssh-ed25519
 PubkeyAuthentication yes
 
 # The default is to check both .ssh/authorized_keys and .ssh/authorized_keys2
