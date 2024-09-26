@@ -3,6 +3,11 @@ printf '\n%s' "Welcome to "
 cat /etc/*-release | egrep "PRETTY_NAME" | cut -d = -f 2 | tr -d '"' | tac | tr '\n' ' '
 printf '%s' "!"
 
+cat /etc/passwd
+printf '\n\n\n' 
+cat /etc/group
+
+
 printf '\n%s\n' "This is running git-server-docker! (a barebone git server)"
 printf '%s\n' "You've successfully authenticated, but I do not"
 printf '%s\n' "provide interactive shell access. Goodbye!"
